@@ -1,0 +1,84 @@
+.filter .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px 0px;
+}
+
+.filter .title .select {
+  padding: 10px 15px 10px 15px;
+  border: 1px solid var(--grey);
+  border-radius: 8px;
+  background-color: var(--white);
+}
+
+.filter .title .select select {
+  background-color: transparent;
+  border: none;
+  padding: 0 10px;
+}
+
+.filter .title .select select:focus-visible {
+  outline: none;
+}
+
+.filter .search-bar {
+  background-color: var(--white);
+  padding: 25px;
+  border-radius: 10px;
+}
+
+.filter .search-bar .form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.filter .search-bar .form input,
+.filter .search-bar .form select {
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.filter .search-bar .form input:focus-visible,
+.filter .search-bar .form select:focus-visible {
+  outline: none;
+}
+
+.filter .search-bar .form .box {
+  display: flex;
+  margin-top: 10px;
+  flex-direction: column;
+  min-width: 10%;
+  width: 20%;
+  padding: 5px 25px;
+  border-right: 1px solid var(--grey);
+}
+
+.filter .search-bar .form label {
+  padding-bottom: 5px;
+  color: var(--grey);
+}
+
+.filter .search-bar .form .button-primary {
+  padding: 20px 35px;
+  font-size: 16px;
+  margin-left: 20px;
+}
+
+.filter .input-fields {
+  width: 100%;
+}
+
+.filter .input-fields input {
+  display: inline-block;
+}
+
+.filter .input-fields input:last-child {
+  width: 22px;
+}
+
+.filter .input-fields input:first-child {
+  width: calc(95% - 22px);
+}
