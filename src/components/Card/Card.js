@@ -16,11 +16,11 @@ const Card = ({ data }) => {
     <div className="card">
       {data.popular && (
         <div className="popular-absolute">
-          <img src={stars} />
+          <img src={stars} alt="" />
           <p>POPULAR</p>
         </div>
       )}
-      <img src={`/images/${data.image}`} className="card-image" />
+      <img src={`/images/${data.image}`} className="card-image" alt="" />
       <div className="card-details">
         <div className="price-and-like">
           <p className="price">
@@ -30,17 +30,18 @@ const Card = ({ data }) => {
           <img
             src={data.fav ? liked : like}
             className="like-button"
+            alt=""
             onClick={() => dispatch(switchFav(data.id))}
           />
         </div>
         <h2 className="card-name">{data.title}</h2>
         <p className="card-address">{data.address}</p>
         <div className="card-features">
-          <img src={bed} className="bed" />
+          <img src={bed} className="bed" alt="" />
           <small>{data.beds} beds</small>
-          <img src={bathtub} className="bathtub" />
+          <img src={bathtub} className="bathtub" alt="" />
           <small>{data.bathrooms} Bathrooms</small>
-          <img src={area} className="area" />
+          <img src={area} className="area" alt="" />
           <small>{data.area} &#13217;</small>
         </div>
       </div>
