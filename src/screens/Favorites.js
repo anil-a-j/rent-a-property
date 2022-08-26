@@ -9,10 +9,10 @@ const Favorites = ({ favs }) => {
   const favUpdated = useSelector((state) => state.property.favsUpdate);
   useEffect(() => {
     dispatch(getFavs());
-  }, []);
+  }, [dispatch]);
   useEffect(() => {
     dispatch(getFavs());
-  }, [favUpdated]);
+  }, [dispatch, favUpdated]);
   return (
     <>
       <div className="container">
